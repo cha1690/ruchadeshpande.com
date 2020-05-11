@@ -1,0 +1,24 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    display: flex;
+    font-size: 16px;
+}
+
+.banner {
+  height: 730px;
+  padding-top: 200px;
+}
+
+.banner h1{
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.banner h2{
+    font-size: 2em;
+    font-weight: 400;
+}
