@@ -15,7 +15,6 @@ body{
     padding-top: 100px;
     padding-left: 10px;
     box-sizing: border-box;
-    width: 80%;
 }
 
 
@@ -67,7 +66,12 @@ body{
     background-color: white;
     display: flex;
     border: 1px solid black;
-    height: 500px;
+    height: auto;
+}
+
+.projects .details{
+    max-width: 80%;
+    display: block;
 }
 
 .projects .banner{
