@@ -1,24 +1,80 @@
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding: 0;
+}
+
+.header{
     background-color: white;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
     display: flex;
-    font-size: 16px;
+    border: 1px solid black;
+    height: 500px;
 }
 
-.banner {
-  height: 730px;
-  padding-top: 200px;
+.banner{
+    padding-top: 100px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    width: 80%;
 }
 
-.banner h1{
+
+.head{
     font-size: 4em;
     font-weight: 700;
 }
 
-.banner h2{
+.subhead{
     font-size: 2em;
-    font-weight: 400;
+    font-weight: 300;
+    padding: 5px;
+    word-wrap: break-word;
+    width:90%;
+}
+
+
+
+.code{
+    display: flex;
+    border: 1px solid black;
+}
+
+.number{
+    width:20%;
+    font-size: 7em;
+    font-weight: 700;
+    text-align: end;
+    padding-right: 20px;
+    color: rgba(156, 48, 26, 0.2);
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+
+.title{
+    max-width: 80%;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-size: 4em;
+    font-weight: 700;
+    color: rgb(156, 48, 26);
+    padding-top: 43px;
+    padding-left: 10px;
+    border: 1px solid black;
+    align-content: center;
+}
+
+.projects{
+    background-color: white;
+    display: flex;
+    border: 1px solid black;
+    height: 500px;
+}
+
+.projects .banner{
+    padding-top: 40px; !important;
+}
+
+.projects .subhead{
+    color: rgb(156, 48, 26);
+    font-size: 1.5em;
 }
