@@ -226,6 +226,15 @@ body {
     width: 90%;
 }
 
+.myjourney .desc {
+    color: rgba(17, 143, 139,0.5);
+    font-size: 1.5em;
+    width: 90%;
+    font-weight: 300;
+    padding: 5px;
+    word-wrap: break-word;
+}
+
 
 .isocial .number {
     color: rgba(138, 136, 143, 0.2);
