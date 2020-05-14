@@ -14,7 +14,7 @@ body {
 }
 
 .header .banner {
-    max-width: 80%;
+    max-width: 70%;
     padding-top: 250px;
     padding-left: 10px;
     box-sizing: border-box;
@@ -41,7 +41,7 @@ body {
 }
 
 .number {
-    width: 20%;
+    width: 30%;
     font-size: 7em;
     font-weight: 700;
     text-align: end;
@@ -68,12 +68,13 @@ body {
     display: flex;
     /*border: 1px solid black;*/
     height: auto;
+    padding-bottom: 30px;
 }
 
 .projects .details {
-    max-width: 80%;
+    max-width: 70%;
     display: block;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .projects .banner {
@@ -176,13 +177,19 @@ body {
     margin-bottom: 10px;
 }
 
+
+.iwrite .projects .all a{
+    padding: 5px; !important;
+    margin-bottom: 10px;
+    color: rgb(17, 143, 53);
+    font-size: 1.5em;
+}
+
 .iwrite .projects .banner .fa-medium{
     color: rgba(17, 143, 53,0.4);
     margin-left: 5px;
 
 }
-
-
 
 .iwrite .projects .details{
     padding: 5px; !important;
