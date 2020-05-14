@@ -1,84 +1,240 @@
-body{
+body {
     font-family: 'Roboto', sans-serif;
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
-.header{
+/*header*/
+
+.header {
     background-color: white;
     display: flex;
-    border: 1px solid black;
-    height: 500px;
+    /*border: 1px solid black;*/
+    height: 600px;
 }
 
-.banner{
-    padding-top: 100px;
+.header .banner {
+    max-width: 80%;
+    padding-top: 250px;
     padding-left: 10px;
     box-sizing: border-box;
 }
 
 
-.head{
+.head {
     font-size: 4em;
     font-weight: 700;
 }
 
-.subhead{
+.subhead {
     font-size: 2em;
     font-weight: 300;
     padding: 5px;
     word-wrap: break-word;
-    width:90%;
 }
 
+/*code*/
 
-
-.code{
+.code {
     display: flex;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
-.number{
-    width:20%;
+.number {
+    width: 20%;
     font-size: 7em;
     font-weight: 700;
     text-align: end;
     padding-right: 20px;
     color: rgba(156, 48, 26, 0.2);
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     box-sizing: border-box;
 }
 
 
-.title{
-    max-width: 80%;
+.title {
     /*font-family: 'Open Sans', sans-serif;*/
     font-size: 4em;
     font-weight: 700;
     color: rgb(156, 48, 26);
-    padding-top: 43px;
+    padding-top: 41px;
     padding-left: 10px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     align-content: center;
 }
 
-.projects{
+.projects {
     background-color: white;
     display: flex;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     height: auto;
 }
 
-.projects .details{
+.projects .details {
     max-width: 80%;
     display: block;
+    padding-bottom: 20px;
 }
 
-.projects .banner{
-    padding-top: 40px; !important;
+.projects .banner {
+    padding-top: 20px;
+    padding-left: 10px;
+!important;
 }
 
-.projects .subhead{
+.icode .projects .banner .fa-github{
+    color: rgba(156, 48, 26, 0.4);
+    margin-left: 3px;
+
+}
+
+.projects .subhead {
     color: rgb(156, 48, 26);
     font-size: 1.5em;
+    width: 90%;
+}
+
+.icook .number {
+    color: rgba(196, 114, 27, 0.2);
+}
+
+.icook .title {
+    color: rgb(196, 114, 27);
+}
+
+.icook .subhead {
+    color: rgb(196, 114, 27);
+    font-size: 1.5em;
+}
+
+
+
+.wrapper {
+    padding: 30px 0;
+    width: 70%;
+}
+
+.wrapper div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.wrapper div.desc {
+    padding: 5px;
+    text-align: center;
+    color: rgb(196, 114, 27);
+    font-size: 1.5em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper .responsive {
+    padding: 0 20px;
+    float: left;
+    width: 49.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .wrapper .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .wrapper .responsive {
+        width: 100%;
+    }
+}
+
+.wrapper .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.iwrite .number {
+    color: rgba(17, 143, 53, 0.2);
+}
+
+.iwrite .title {
+    color: rgb(17, 143, 53);
+}
+
+.iwrite .subhead {
+    color: rgb(17, 143, 53);
+    font-size: 1.5em;
+    width: 90%;
+}
+
+.iwrite .projects .banner{
+    border-bottom: 0.5px solid lightgray;
+    padding: 5px; !important;
+    margin-bottom: 10px;
+}
+
+.iwrite .projects .banner .fa-medium{
+    color: rgba(17, 143, 53,0.4);
+    margin-left: 5px;
+
+}
+
+
+
+.iwrite .projects .details{
+    padding: 5px; !important;
+    margin: 5px 0;
+}
+
+
+.idream .number {
+    color: rgba(65, 17, 143, 0.2);
+}
+
+.idream .title {
+    color: rgb(65, 17, 143);
+}
+
+.idream .subhead {
+    color: rgb(65, 17, 143);
+    font-size: 1.5em;
+    width: 90%;
+}
+
+
+.myjourney .number {
+    color: rgba(17, 143, 139, 0.2);
+}
+
+.myjourney .title {
+    color: rgb(17, 143, 139);
+}
+
+.myjourney .subhead {
+    color: rgb(17, 143, 139);
+    font-size: 1.5em;
+    width: 90%;
+}
+
+
+.isocial .number {
+    color: rgba(138, 136, 143, 0.2);
+}
+
+.isocial .title {
+    color: rgb(138, 136, 143);
+}
+
+.isocial .subhead {
+    color: rgb(138, 136, 143);
+    font-size: 4em;
+    padding: 10px;!important;
+    width: auto; !important;
+}
+
+.isocial .subhead .fab{
+    padding: 5px 30px;
 }
