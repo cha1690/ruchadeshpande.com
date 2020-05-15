@@ -93,6 +93,7 @@ body {
     color: rgb(156, 48, 26);
     font-size: 1.5em;
     width: 90%;
+    line-height: 1.7em;
 }
 
 .icook .number {
@@ -106,6 +107,7 @@ body {
 .icook .subhead {
     color: rgb(196, 114, 27);
     font-size: 1.5em;
+    line-height: 1.7em;
 }
 
 
@@ -137,14 +139,14 @@ body {
     width: 49.99999%;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
     .wrapper .responsive {
         width: 49.99999%;
         margin: 6px 0;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
     .wrapper .responsive {
         width: 100%;
     }
@@ -169,6 +171,7 @@ body {
     color: rgb(17, 143, 53);
     font-size: 1.5em;
     width: 90%;
+    line-height: 1.7em;
 }
 
 .iwrite .projects .banner{
@@ -209,6 +212,7 @@ body {
     color: rgb(65, 17, 143);
     font-size: 1.5em;
     width: 90%;
+    line-height: 1.7em;
 }
 
 
@@ -224,6 +228,7 @@ body {
     color: rgb(17, 143, 139);
     font-size: 1.5em;
     width: 90%;
+    line-height: 1.7em;
 }
 
 .myjourney .desc {
