@@ -89,6 +89,12 @@ body {
 
 }
 
+.icode .projects .banner .fas{
+    color: rgba(156, 48, 26, 0.4);
+    margin-left: 3px;
+
+}
+
 .projects .subhead {
     color: rgb(156, 48, 26);
     font-size: 1.5em;
