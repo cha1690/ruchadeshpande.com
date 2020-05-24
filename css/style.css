@@ -1,15 +1,15 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: black;
+
 }
 
 /*header*/
 
 .header {
-    background-color: white;
     display: flex;
-    /*border: 1px solid black;*/
     height: 600px;
 }
 
@@ -22,117 +22,160 @@ body {
 
 
 .head {
-    font-size: 4em;
+    font-size: 4rem;
     font-weight: 700;
+    color: lightgray;
 }
 
 .subhead {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 300;
     padding: 5px;
     word-wrap: break-word;
+    color: lightgray;
 }
 
-/*code*/
+.arrow {
+    display: block;
+    text-align: center;
+    margin: 70px 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+.fa-arrow-down{
+    color: white;
+    font-size: 2rem;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/*General*/
 
 .code {
     display: flex;
-    /*border: 1px solid black;*/
 }
 
 .number {
     width: 30%;
-    font-size: 7em;
+    font-size: 7rem;
     font-weight: 700;
     text-align: end;
     padding-right: 20px;
-    color: rgba(156, 48, 26, 0.2);
-    /*border: 1px solid black;*/
+    color: rgba(255, 186, 186, 0.2);
     box-sizing: border-box;
 }
 
 
 .title {
-    /*font-family: 'Open Sans', sans-serif;*/
-    font-size: 4em;
+    font-size: 4rem;
     font-weight: 700;
-    color: rgb(156, 48, 26);
+    color: rgb(255, 186, 186);
     padding-top: 41px;
     padding-left: 10px;
-    /*border: 1px solid black;*/
     align-content: center;
 }
 
 .projects {
-    background-color: white;
     display: flex;
-    /*border: 1px solid black;*/
     height: auto;
     padding-bottom: 30px;
 }
 
 .projects .details {
-    max-width: 70%;
+    max-width: 50%;
     display: block;
     padding-bottom: 40px;
+    padding-top: 20px;
 }
 
 .projects .banner {
-    padding-top: 20px;
+    padding-bottom: 50px;
     padding-left: 10px;
 !important;
 }
 
-.icode .projects .banner .fa-github{
-    color: rgba(156, 48, 26, 0.4);
-    margin-left: 3px;
-
-}
-
-.icode .projects .banner .fas{
-    color: rgba(156, 48, 26, 0.4);
-    margin-left: 3px;
-
-}
-
 .projects .subhead {
-    color: rgb(156, 48, 26);
-    font-size: 1.5em;
+    color: rgb(255, 186, 186);
+    font-size: 1.5rem;
     width: 90%;
-    line-height: 1.7em;
+    line-height: 2rem;
 }
+
+/*Code Section*/
+
+.icode .projects .banner .stack {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.icode .projects .banner .fa-github {
+    color: rgba(255, 186, 186, 0.4);
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+
+.icode .projects .banner .subhead a {
+    color: rgb(255, 186, 186);
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.icode .projects .banner .subhead .name{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+
+/*Cook Section*/
 
 .icook .number {
-    color: rgba(196, 114, 27, 0.2);
+    color: rgba(253, 231, 168, 0.2);
 }
 
 .icook .title {
-    color: rgb(196, 114, 27);
+    color: rgb(253, 231, 168);
 }
 
 .icook .subhead {
-    color: rgb(196, 114, 27);
-    font-size: 1.5em;
-    line-height: 1.7em;
+    color: rgb(253, 231, 168);
 }
 
-
+.icook .projects .banner {
+    padding-bottom: 0;
+}
 
 .wrapper {
     padding: 30px 0;
-    width: 70%;
+    width: 90%;
 }
 
 .wrapper div.gallery img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .wrapper div.desc {
     padding: 5px;
-    text-align: center;
-    color: rgb(196, 114, 27);
-    font-size: 1.5em;
+    text-align: left;
+    color: rgb(253, 231, 168);
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 * {
@@ -140,7 +183,8 @@ body {
 }
 
 .wrapper .responsive {
-    padding: 0 20px;
+    padding: 0 10px;
+    padding-bottom: 25px;
     float: left;
     width: 49.99999%;
 }
@@ -164,111 +208,104 @@ body {
     clear: both;
 }
 
+/*Write Section*/
+
 
 .iwrite .number {
-    color: rgba(17, 143, 53, 0.2);
+    color: rgba(199,254,209, 0.2);
 }
 
 .iwrite .title {
-    color: rgb(17, 143, 53);
+    color: rgb(199,254,209);
 }
 
 .iwrite .subhead {
-    color: rgb(17, 143, 53);
-    font-size: 1.5em;
-    width: 90%;
-    line-height: 1.7em;
+    color: rgb(199,254,209);
 }
 
-.iwrite .projects .banner{
-    border-bottom: 0.5px solid lightgray;
-    padding: 5px; !important;
+.iwrite .projects .all {
+    padding: 5px;!important;
     margin-bottom: 10px;
 }
 
-
-.iwrite .projects .all a{
-    padding: 5px; !important;
-    margin-bottom: 10px;
-    color: rgb(17, 143, 53);
-    font-size: 1.5em;
+.iwrite .projects .all a {
+    color: rgb(199,254,209);
+    font-size: 1.5rem;
 }
 
-.iwrite .projects .banner .fa-medium{
-    color: rgba(17, 143, 53,0.4);
+.iwrite .projects .banner .fa-medium {
+    color: rgba(199,254,209, 0.4);
     margin-left: 5px;
 
 }
 
-.iwrite .projects .details{
-    padding: 5px; !important;
+.iwrite .projects .details {
+    padding: 5px;!important;
     margin: 5px 0;
 }
 
+/*Dream*/
 
 .idream .number {
-    color: rgba(65, 17, 143, 0.2);
+    color: rgba(186,255,236, 0.2);
 }
 
 .idream .title {
-    color: rgb(65, 17, 143);
+    color: rgb(186,255,236);
 }
 
 .idream .subhead {
-    color: rgb(65, 17, 143);
-    font-size: 1.5em;
-    width: 90%;
-    line-height: 1.7em;
+    color: rgb(186,255,236);
 }
 
+/*Journey Section*/
 
 .myjourney .number {
-    color: rgba(17, 143, 139, 0.2);
+    color: rgba(186,235,255, 0.2);
 }
 
 .myjourney .title {
-    color: rgb(17, 143, 139);
+    color: rgb(186,235,255);
 }
 
 .myjourney .subhead {
-    color: rgb(17, 143, 139);
-    font-size: 1.5em;
-    width: 90%;
-    line-height: 1.7em;
+    color: rgb(186,235,255);
 }
 
 .myjourney .desc {
-    color: rgba(17, 143, 139,0.5);
-    font-size: 1.5em;
+    color: rgba(186,235,255, 0.5);
+    font-size: 1.5rem;
     width: 90%;
     font-weight: 300;
     padding: 5px;
     word-wrap: break-word;
 }
 
+/*Social Section*/
 
 .isocial .number {
-    color: rgba(138, 136, 143, 0.2);
+    color: rgba(249,202,255, 0.2);
 }
 
 .isocial .title {
-    color: rgb(138, 136, 143);
+    color: rgb(249,202,255);
 }
 
 .isocial .subhead {
-    color: rgb(138, 136, 143);
-    font-size: 4em;
-    padding: 10px;!important;
-    width: auto; !important;
+    color: rgb(249,202,255);
+    width: auto;!important;
 }
 
-.isocial .subhead a{
-    padding: 5px; !important;
+.isocial .subhead a {
     margin-bottom: 10px;
-    color: rgb(138, 136, 143);
-    font-size: 1em;
+    color: rgb(249,202,255);
+    font-size: 1.3rem;
 }
 
-.isocial .subhead .fab{
-    padding: 5px 30px;
+.isocial .subhead .fab {
+    padding: 5px 5px;
+}
+
+.isocial .projects .banner {
+    padding-left: 0;
 }
