@@ -37,7 +37,8 @@ body {
 
 .arrow {
     display: block;
-    text-align: center;
+    text-align: left;
+    padding-left: 30%;
     margin: 70px 0;
 }
 .bounce {
@@ -111,7 +112,6 @@ body {
 .projects .subhead {
     color: rgb(255, 186, 186);
     font-size: 1.5rem;
-    width: 90%;
     line-height: 2rem;
 }
 
@@ -152,15 +152,18 @@ body {
 }
 
 .icook .subhead {
+    /*border: 1px solid white;*/
     color: rgb(253, 231, 168);
 }
 
 .icook .projects .banner {
+    /*border: 1px solid white;*/
     padding-bottom: 0;
 }
 
 .wrapper {
-    padding: 30px 0;
+    /*border: 1px solid white;*/
+    padding: 30px 14px;
     width: 90%;
 }
 
@@ -171,10 +174,11 @@ body {
 }
 
 .wrapper div.desc {
-    padding: 5px;
+    /*border: 1px solid white;*/
+    padding-top: 5px;
     text-align: left;
     color: rgb(253, 231, 168);
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
 }
 
@@ -183,7 +187,8 @@ body {
 }
 
 .wrapper .responsive {
-    padding: 0 10px;
+    /*border: 1px solid white;*/
+    padding-right: 25px;
     padding-bottom: 25px;
     float: left;
     width: 49.99999%;
@@ -219,29 +224,45 @@ body {
     color: rgb(199,254,209);
 }
 
-.iwrite .subhead {
+.iwrite .banner {
+    color: rgb(199,254,209);
+    border: 0.5px solid rgba(199,254,209, 0.4);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.iwrite .subhead{
     color: rgb(199,254,209);
 }
 
-.iwrite .projects .all {
-    padding: 5px;!important;
-    margin-bottom: 10px;
+.iwrite .projects .banner .heading{
+    font-weight: 700;
 }
 
-.iwrite .projects .all a {
+
+.iwrite .projects a {
     color: rgb(199,254,209);
     font-size: 1.5rem;
-}
-
-.iwrite .projects .banner .fa-medium {
-    color: rgba(199,254,209, 0.4);
-    margin-left: 5px;
-
+    text-decoration: none;
 }
 
 .iwrite .projects .details {
     padding: 5px;!important;
-    margin: 5px 0;
+    margin-top: 25px;
+}
+
+.iwrite .projects .all {
+    color: rgb(199,254,209);
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.iwrite .projects .all .fas {
+    color: rgb(199,254,209);
+    font-size: 1rem;
+    margin-left: 5px;
 }
 
 /*Dream*/
@@ -297,9 +318,9 @@ body {
 }
 
 .isocial .subhead a {
-    margin-bottom: 10px;
+    margin: 0 10px 10px 0;
     color: rgb(249,202,255);
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 }
 
 .isocial .subhead .fab {
