@@ -21,16 +21,17 @@ body {
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 768px){
-    .header{
+@media only screen and (max-width: 768px) {
+    .header {
         display: block;
     }
+
     .header .banner {
-    max-width: 100%;
-    padding: 35% 10%;
-    box-sizing: border-box;
-    margin-top: 30%;
-}
+        max-width: 100%;
+        padding: 35% 10%;
+        box-sizing: border-box;
+        margin-top: 30%;
+    }
 
 }
 
@@ -56,10 +57,10 @@ body {
     margin: 70px 0;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
     .arrow {
-    visibility: hidden;
-}
+        visibility: hidden;
+    }
 }
 
 .bounce {
@@ -112,7 +113,8 @@ body {
         width: 100%;
         font-size: 8rem;
         display: block;
-        text-align: center;
+        text-align: start;
+        padding: 0 10%;
     }
 }
 
@@ -137,7 +139,7 @@ body {
 
 @media only screen and (max-width: 768px) {
     span {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }
 
@@ -149,9 +151,9 @@ body {
 
 @media only screen and (max-width: 768px) {
     .projects {
-    display: block;
-    padding-bottom: 30px;
-}
+        display: block;
+        padding-bottom: 30px;
+    }
 }
 
 .projects .details {
@@ -174,10 +176,11 @@ body {
     padding-left: 10px;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
     .projects .banner {
         padding-bottom: 50px;
-        padding-left: 0;!important;
+        padding-left: 0;
+    !important;
     }
 }
 
@@ -235,6 +238,14 @@ body {
     /*border: 1px solid white;*/
     padding: 30px 14px;
     width: 90%;
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        /*border: 1px solid white;*/
+        padding: 0;
+        width: 100%;
+    }
 }
 
 .wrapper div.gallery img {
