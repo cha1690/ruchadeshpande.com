@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
-
+    font-size: 16px;
 }
 
 /*header*/
@@ -13,6 +13,7 @@ body {
     height: 600px;
 }
 
+
 .header .banner {
     max-width: 70%;
     padding-top: 250px;
@@ -20,11 +21,24 @@ body {
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 768px){
+    .header{
+        display: block;
+    }
+    .header .banner {
+    max-width: 100%;
+    padding: 35% 10%;
+    box-sizing: border-box;
+    margin-top: 30%;
+}
+
+}
 
 .head {
     font-size: 4rem;
     font-weight: 700;
     color: lightgray;
+    padding: 5px;
 }
 
 .subhead {
@@ -41,27 +55,34 @@ body {
     padding-left: 30%;
     margin: 70px 0;
 }
-.bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
+
+@media only screen and (max-width: 768px){
+    .arrow {
+    visibility: hidden;
+}
 }
 
-.fa-arrow-down{
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+.fa-arrow-down {
     color: white;
     font-size: 2rem;
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
 }
 
 /*General*/
@@ -80,6 +101,21 @@ body {
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 768px) {
+    .code {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .number {
+        width: 100%;
+        font-size: 8rem;
+        display: block;
+        text-align: center;
+    }
+}
+
 
 .title {
     font-size: 4rem;
@@ -90,23 +126,59 @@ body {
     align-content: center;
 }
 
+@media only screen and (max-width: 768px) {
+    .title {
+        font-size: 4rem;
+        font-weight: 700;
+        padding: 15% 10%;
+        color: rgb(255, 186, 186);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    span {
+        font-size: 3rem;
+    }
+}
+
 .projects {
     display: flex;
     height: auto;
     padding-bottom: 30px;
 }
 
+@media only screen and (max-width: 768px) {
+    .projects {
+    display: block;
+    padding-bottom: 30px;
+}
+}
+
 .projects .details {
     max-width: 50%;
-    display: block;
+    /*display: block;*/
     padding-bottom: 40px;
     padding-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .projects .details {
+        max-width: 100%;
+    !important;
+        padding: 10%;
+    }
 }
 
 .projects .banner {
     padding-bottom: 50px;
     padding-left: 10px;
-!important;
+}
+
+@media only screen and (max-width: 768px){
+    .projects .banner {
+        padding-bottom: 50px;
+        padding-left: 0;!important;
+    }
 }
 
 .projects .subhead {
@@ -116,7 +188,6 @@ body {
 }
 
 /*Code Section*/
-
 .icode .projects .banner .stack {
     font-size: 1.2rem;
     font-weight: 500;
@@ -135,14 +206,13 @@ body {
     text-decoration: none;
 }
 
-.icode .projects .banner .subhead .name{
+.icode .projects .banner .subhead .name {
     font-weight: 700;
     font-size: 2rem;
 }
 
 
 /*Cook Section*/
-
 .icook .number {
     color: rgba(253, 231, 168, 0.2);
 }
@@ -214,87 +284,91 @@ body {
 }
 
 /*Write Section*/
-
-
 .iwrite .number {
-    color: rgba(199,254,209, 0.2);
+    color: rgba(199, 254, 209, 0.2);
 }
 
 .iwrite .title {
-    color: rgb(199,254,209);
+    color: rgb(199, 254, 209);
 }
 
 .iwrite .banner {
-    color: rgb(199,254,209);
-    border: 0.5px solid rgba(199,254,209, 0.4);
+    color: rgb(199, 254, 209);
+    border: 0.5px solid rgba(199, 254, 209, 0.4);
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 50px;
 }
 
-.iwrite .subhead{
-    color: rgb(199,254,209);
+.iwrite .subhead {
+    color: rgb(199, 254, 209);
 }
 
-.iwrite .projects .banner .heading{
+.iwrite .projects .banner .heading {
     font-weight: 700;
 }
 
 
 .iwrite .projects a {
-    color: rgb(199,254,209);
+    color: rgb(199, 254, 209);
     font-size: 1.5rem;
     text-decoration: none;
 }
 
 .iwrite .projects .details {
-    padding: 5px;!important;
+    padding: 5px;
+!important;
     margin-top: 25px;
 }
 
+@media only screen and (max-width: 768px) {
+    .iwrite .projects .details {
+        max-width: 100%;
+        padding: 10%;
+    }
+}
+
 .iwrite .projects .all {
-    color: rgb(199,254,209);
+    color: rgb(199, 254, 209);
     font-size: 1.5rem;
     text-decoration: none;
     font-weight: 300;
 }
 
 .iwrite .projects .all .fas {
-    color: rgb(199,254,209);
+    color: rgb(199, 254, 209);
     font-size: 1rem;
     margin-left: 5px;
 }
 
 /*Dream*/
-
 .idream .number {
-    color: rgba(186,255,236, 0.2);
+    color: rgba(186, 255, 236, 0.2);
 }
 
 .idream .title {
-    color: rgb(186,255,236);
+    color: rgb(186, 255, 236);
 }
 
 .idream .subhead {
-    color: rgb(186,255,236);
+    color: rgb(186, 255, 236);
 }
 
 /*Journey Section*/
-
 .myjourney .number {
-    color: rgba(186,235,255, 0.2);
+    color: rgba(186, 235, 255, 0.2);
 }
 
 .myjourney .title {
-    color: rgb(186,235,255);
+    color: rgb(186, 235, 255);
 }
 
 .myjourney .subhead {
-    color: rgb(186,235,255);
+    color: rgb(186, 235, 255);
 }
 
 .myjourney .desc {
-    color: rgba(186,235,255, 0.5);
+    color: rgba(186, 235, 255, 0.5);
     font-size: 1.5rem;
     width: 90%;
     font-weight: 300;
@@ -303,23 +377,23 @@ body {
 }
 
 /*Social Section*/
-
 .isocial .number {
-    color: rgba(249,202,255, 0.2);
+    color: rgba(249, 202, 255, 0.2);
 }
 
 .isocial .title {
-    color: rgb(249,202,255);
+    color: rgb(249, 202, 255);
 }
 
 .isocial .subhead {
-    color: rgb(249,202,255);
-    width: auto;!important;
+    color: rgb(249, 202, 255);
+    width: auto;
+!important;
 }
 
 .isocial .subhead a {
     margin: 0 10px 10px 0;
-    color: rgb(249,202,255);
+    color: rgb(249, 202, 255);
     font-size: 1.7rem;
 }
 
