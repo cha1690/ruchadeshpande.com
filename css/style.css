@@ -24,6 +24,7 @@ body {
 @media only screen and (max-width: 768px) {
     .header {
         display: block;
+        height:auto;
     }
 
     .header .banner {
@@ -71,9 +72,8 @@ body {
 
 @media only screen and (max-width: 768px) {
     .arrow {
-        visibility: hidden;
-        margin: 0;
-        padding: 0;
+        padding-left: 10%;
+        margin-top: 0;
     }
 }
 
