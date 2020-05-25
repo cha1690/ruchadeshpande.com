@@ -30,7 +30,7 @@ body {
         max-width: 100%;
         padding: 35% 10%;
         box-sizing: border-box;
-        margin-top: 30%;
+        /*margin-top: 10%;*/
     }
 
 }
@@ -45,7 +45,7 @@ body {
 
 @media only screen and (max-width: 768px) {
     .head{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -73,6 +73,8 @@ body {
 @media only screen and (max-width: 768px) {
     .arrow {
         visibility: hidden;
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -409,6 +411,12 @@ body {
     color: rgb(249, 202, 255);
 }
 
+@media only screen and (max-width: 768px) {
+    .isocial .code .title span {
+       visibility: hidden;
+    }
+}
+
 .isocial .subhead {
     color: rgb(249, 202, 255);
     width: auto;
@@ -424,6 +432,8 @@ body {
 .isocial .subhead .fab {
     padding: 5px 5px;
 }
+
+
 
 .isocial .projects .banner {
     padding-left: 0;
