@@ -401,6 +401,11 @@ body {
     word-wrap: break-word;
 }
 
+.myjourney .desc a {
+    color: rgba(186, 235, 255, 0.5);
+    text-decoration: none;
+}
+
 /*Social Section*/
 .isocial .number {
     color: rgba(249, 202, 255, 0.2);
